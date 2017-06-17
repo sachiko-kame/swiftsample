@@ -15,6 +15,7 @@
 		8465697A1EF568B000B472BB /* swiftsampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846569791EF568B000B472BB /* swiftsampleTests.swift */; };
 		846569851EF568D200B472BB /* objframework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 846569841EF568D200B472BB /* objframework.framework */; };
 		846569871EF5691800B472BB /* objframework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 846569841EF568D200B472BB /* objframework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8465698B1EF5699100B472BB /* a.m in Sources */ = {isa = PBXBuildFile; fileRef = 8465698A1EF5699100B472BB /* a.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		846569791EF568B000B472BB /* swiftsampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftsampleTests.swift; sourceTree = "<group>"; };
 		8465697B1EF568B000B472BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		846569841EF568D200B472BB /* objframework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = objframework.framework; sourceTree = "<group>"; };
+		846569891EF5699100B472BB /* swiftsample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "swiftsample-Bridging-Header.h"; sourceTree = "<group>"; };
+		8465698A1EF5699100B472BB /* a.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = a.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,10 +101,12 @@
 			children = (
 				846569641EF568B000B472BB /* AppDelegate.swift */,
 				846569661EF568B000B472BB /* ViewController.swift */,
+				8465698A1EF5699100B472BB /* a.m */,
 				846569681EF568B000B472BB /* Main.storyboard */,
 				8465696B1EF568B000B472BB /* Assets.xcassets */,
 				8465696D1EF568B000B472BB /* LaunchScreen.storyboard */,
 				846569701EF568B000B472BB /* Info.plist */,
+				846569891EF5699100B472BB /* swiftsample-Bridging-Header.h */,
 			);
 			path = swiftsample;
 			sourceTree = "<group>";
@@ -167,6 +172,7 @@
 					846569601EF568B000B472BB = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 5BS3A226T4;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					846569741EF568B000B472BB = {
@@ -221,6 +227,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8465698B1EF5699100B472BB /* a.m in Sources */,
 				846569671EF568B000B472BB /* ViewController.swift in Sources */,
 				846569651EF568B000B472BB /* AppDelegate.swift in Sources */,
 			);
@@ -359,6 +366,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 5BS3A226T4;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -368,6 +376,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sachiko.swiftsample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "swiftsample/swiftsample-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -376,6 +386,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 5BS3A226T4;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -385,6 +396,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sachiko.swiftsample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "swiftsample/swiftsample-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
