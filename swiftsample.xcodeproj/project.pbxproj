@@ -14,6 +14,7 @@
 		8465696F1EF568B000B472BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8465696D1EF568B000B472BB /* LaunchScreen.storyboard */; };
 		8465697A1EF568B000B472BB /* swiftsampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846569791EF568B000B472BB /* swiftsampleTests.swift */; };
 		846569851EF568D200B472BB /* objframework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 846569841EF568D200B472BB /* objframework.framework */; };
+		846569871EF5691800B472BB /* objframework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 846569841EF568D200B472BB /* objframework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +26,20 @@
 			remoteInfo = swiftsample;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		846569881EF5691800B472BB /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				846569871EF5691800B472BB /* objframework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		846569611EF568B000B472BB /* swiftsample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftsample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -110,6 +125,7 @@
 				8465695D1EF568B000B472BB /* Sources */,
 				8465695E1EF568B000B472BB /* Frameworks */,
 				8465695F1EF568B000B472BB /* Resources */,
+				846569881EF5691800B472BB /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
