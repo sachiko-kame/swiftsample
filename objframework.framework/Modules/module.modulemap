@@ -1,5 +1,5 @@
 framework module objframework {
-  umbrella header "objframework.h"
+  umbrella header "sample1.h"
 
   export *
   module * { export * }
